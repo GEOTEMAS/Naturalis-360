@@ -1,0 +1,97 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo del cuerpo */
+body {
+    background-color: #8db9dd63; /* Color claro y amigable */
+ 
+    font-family: Arial, sans-serif;
+}
+
+/* Cabecera */
+.header {
+    background-color: #abffae2c; /* Verde brillante */
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 20px;
+}
+
+/* Estilo de la sección */
+.section {
+    text-align: center;
+    padding: 250px;
+}
+
+/* Estilo de la sección de videojuegos */
+.game-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 200px;
+}
+
+.game-card {
+    background-color: #ffffff83; /* Fondo blanco para las tarjetas */
+    border: 2px solid #000000; /* Borde verde */
+    border-radius: 10px;
+    text-decoration: none;
+    width: 400px; /* Aumentar el ancho de las tarjetas */
+    height: 300px;
+    text-align: center;
+    padding: 15px; /* Aumentar el padding */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efecto de transformación y sombra */
+}
+
+.game-card img {
+    width: 100%; /* Imagen ocupa todo el ancho de la tarjeta */
+    border-radius: 5px;
+}
+
+.game-card h3 {
+    color: #000000; /* Color verde para los títulos */
+
+}
+
+/* Animaciones al pasar el ratón */
+.game-card:hover {
+    transform: scale(1.1); /* Aumentar el tamaño al pasar el ratón */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Añadir sombra */
+}
+
+
+.background-video {
+    position: absolute; /* Posición absoluta para cubrir toda la pantalla */
+    top: 50%; /* Centrar verticalmente */
+    left: 50%; /* Centrar horizontalmente */
+    min-width: 100%; /* Ancho mínimo 100% */
+    min-height: 100%; /* Altura mínima 100% */
+    width: auto; /* Ancho automático */
+    height: auto; /* Altura automática */
+    z-index: -1; /* Colocar el video detrás del contenido */
+    transform: translate(-50%, -50%); /* Centramos el video */
+    display: block;
+}
+
+.content {
+    position: relative; /* Posición relativa para colocar encima del video */
+    z-index: 1; /* Asegurarnos que el contenido esté por encima del video */
+    color: white; /* Color del texto */
+    text-align: center; /* Centrar el texto */
+    padding: 20px; /* Espaciado */
+    display: block;
+}
+
+footer {
+    background-color: #33333300;
+    color: #000000;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 14px;
+    position:-ms-page;
+    bottom: 0;
+    width: 100%;
+}
